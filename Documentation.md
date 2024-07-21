@@ -151,7 +151,9 @@ Count occurrences:
 The project includes the necessary dependencies in the build.gradle file:
 
 -org.springframework.boot:spring-boot-starter-websocket
+
 -org.springframework.boot:spring-boot-starter
+
 -org.springframework.boot:spring-boot-starter-test
 
 ## Implementation:
