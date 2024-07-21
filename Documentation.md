@@ -26,6 +26,12 @@ http://localhost:8080/
 2. **Request:** Send a text message.
 3. **Response:** The server will echo the reversed message back to the client in a streaming format with a 0.1-second delay(after the 1st response).
 
+### Last Character
+
+1. **Description:** Returns the last character of the message.
+2. **Request:** Send a text message.
+3. **Response:** The server will send back the last character in the message in a streaming format with a 0.1-second delay after the preceeding response.
+
 ### Count Last Character Occurrences
 
 1. **Description:** Counts the number of times the last character is repeated in the message (excluding the last character) and returns this count.
@@ -73,7 +79,20 @@ Example:
 ``
 
 
-**3. Count Last Character Occurrences:**
+**3. Last Character:**
+
+Description: The server returns the last character of the message.
+
+Example:
+``
+{
+    "type": "lastChar",
+    "character": "o",
+}
+``
+
+
+**4. Count Last Character Occurrences:**
 
 Description: The server sends the count of occurrences of the last character in the message (excluding the last character).
 
@@ -81,7 +100,6 @@ Example:
 ``
 {
     "type": "count",
-    "character": "o",
     "count": 4
 }
 ``
@@ -106,6 +124,15 @@ Reversed message:
 {
     "type": "reversed",
     "message": "o god yzal eht revo depmuj xof nworb kciuq ehT"
+}
+``
+
+Last Character
+
+``
+{
+    "type": "lastChar",
+    "character": "o",
 }
 ``
 
