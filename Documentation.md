@@ -146,11 +146,25 @@ Count occurrences:
 }
 ``
 
+## Dependencies:
+
+The project includes the necessary dependencies in the build.gradle file:
+
+-org.springframework.boot:spring-boot-starter-websocket
+-org.springframework.boot:spring-boot-starter
+-org.springframework.boot:spring-boot-starter-test
+
+## Implementation:
+
+The implementation details include:
+
+1. WebSocket Configuration: Configuration of WebSocket using WebSocketMessageBrokerConfigurer.
+2. Message Controller: A controller to handle WebSocket messages and perform the specified actions.
+3. Client Interface: An HTML and JavaScript client to connect to the WebSocket server and display messages.
 ## Output Images
 
 **Front-end Output**
 ![alt frontend output](ChatStream/frontend_output.jpg)
-
 **Console**
 
 ![alt console](ChatStream/console.jpg)
