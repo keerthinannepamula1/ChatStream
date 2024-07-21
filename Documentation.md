@@ -3,7 +3,7 @@
 This documentation provides details on how to connect to the WebSocket server, the available actions, and the expected request and response formats in JSON. The WebSocket backend performs the following actions:
 
 1. Echoes the message sent in a streaming format with a 0.1-second delay.
-2. Echoes the message in reverse in a streaming format with a 0.1-second delay.
+2. Echoes the message in reverse in a streaming format with a 0.1-second delay (after the 1st response).
 3. Counts the number of times the last character is repeated in the message (excluding the last character) and returns this count.
 
 # Connecting to the WebSocket Server
